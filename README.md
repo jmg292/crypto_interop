@@ -1,4 +1,4 @@
-A native DLL to provide a mechanism for encryption and transparent mutual authentication that's cross-compatible between Python and C#.
+A native DLL to provide a mechanism for encryption and transparent mutual authentication that's cross-compatible between Python and C#. Sure, I could have just used libsodium or openssl, but what's the fun in that? This library is a toy that I mostly wrote to learn how to use Rust more effectively.
 
 Authentication is provided using a static ECDSA keypair on curve secp256k1 implemented within the libsecp256k1 crate. The key exchange is performed using ECDH on the same curve after identity has been verified.
 
